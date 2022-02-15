@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="3.1" type="plugin" group="hikashoppayment" method="upgrade">
+    <name>plg_hikashoppayment_concordpay</name>
+    <author>ConcordPay</author>
+    <creationDate>2021-12-21</creationDate>
+    <copyright>Copyright (C) 2021 ConcordPay. All rights reserved.</copyright>
+    <license>GNU/GPLv3 https://www.gnu.org/licenses/gpl-3.0.html</license>
+    <authorEmail>info@mustpay.tech</authorEmail>
+    <authorUrl>https://mustpay.tech</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_HIKASHOPPAYMENT_CONCORDPAY_XML_DESCRIPTION</description>
+    <files>
+        <filename plugin="concordpay">concordpay.php</filename>
+        <filename>concordpay_end.php</filename>
+        <filename>index.html</filename>
+        <filename>README.md</filename>
+        <folder>language</folder>
+        <folder>media</folder>
+        <folder>sql</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_hikashoppayment_concordpay.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_hikashoppayment_concordpay.sys.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.plg_hikashoppayment_concordpay.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.plg_hikashoppayment_concordpay.sys.ini</language>
+        <language tag="uk-UA">language/uk-UA/uk-UA.plg_hikashoppayment_concordpay.ini</language>
+        <language tag="uk-UA">language/uk-UA/uk-UA.plg_hikashoppayment_concordpay.sys.ini</language>
+    </languages>
+    <scriptfile>script.php</scriptfile>
+    <config>
+        <fields name="params" addfieldpath="/components/com_hikashop/fields">
+            <fieldset name="basic">
+                <field id="pluginoptions" name="pluginoptions" type="pluginoptions" label="hikashop"
+                       description="HikaShop options"/>
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension" name="HikaShop plg_hikashoppayment_concordpay Update Site">
+            <![CDATA[https://raw.githubusercontent.com/webdevconcord/joomla-hikashop/master/update.xml]]></server>
+    </updateservers>
+</extension>
